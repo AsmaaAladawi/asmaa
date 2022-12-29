@@ -1,0 +1,40 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+
+        int Sum, i, a, start, end;
+
+        Console.WriteLine("please enter the first number");
+        start = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("please enter the second number");
+        end = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("The Perfect numbers : ");
+
+        for (a = start; a <= end; a++)
+        {
+            i = 1;
+            Sum = 0;
+            while (i < a)
+            {
+                if (a % i == 0)
+
+                    Sum = Sum + i;
+
+                i++;
+
+            }
+            if (Sum == a)
+
+
+                Console.WriteLine("\t" + "{0} ", a);
+
+        }
+        Console.Write("\n");
+        Console.ReadLine();
+
+    }
+}

@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int a;
+          Console.WriteLine("please enter the first number");
+            int start = int.Parse(Console.ReadLine());
+
+           Console.WriteLine("please enter the second number");
+          int end = int.Parse(Console.ReadLine());
+
+            for (a =start; a <= end; a++) {
+
+                bool isPrimeNumber = true;
+
+                for (int i = 2; i < a; i++)
+                {
+                    if (a % i == 0)
+
+                    {
+                        isPrimeNumber = false;
+
+                        break;
+                    }
+
+                }
+
+                if (isPrimeNumber)
+                {
+                    Console.WriteLine(a+" - ");
+
+                }
+
+
+
+                        }
+         
+
+        }
+    }
+}
